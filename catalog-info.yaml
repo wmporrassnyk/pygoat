@@ -39,7 +39,7 @@ spec:
   type: service
   owner: group:snyk-cs-goof-org/ops
   lifecycle: production
-  system: sample-system
+  system: python-goof
   providesApis:
     - python-goof
   dependsOn:
@@ -57,7 +57,7 @@ spec:
   type: library
   lifecycle: production
   owner: group:roadiehq/marketing
-  system: sample-system
+  system: python-goof
   subcomponentOf: python-goof
 
 ---
@@ -73,7 +73,7 @@ spec:
   type: openapi
   lifecycle: production
   owner: group:snyk-cs-goof-org/ops
-  system: sample-system
+  system: python-goof
   definition:
     $text: https://github.com/snyk-cs-goof/pygoat/blob/main/api-spec.yaml
 
@@ -90,7 +90,7 @@ spec:
   type: openapi
   lifecycle: production
   owner: group:snyk-cs-goof-org/ops
-  system: sample-system
+  system: python-goof
   definition:
     $text: https://petstore.swagger.io/v2/swagger.json
 
@@ -103,7 +103,7 @@ metadata:
 spec:
   type: s3-bucket
   owner: team-alpha
-  system: sample-system
+  system: python-goof
 
 ---
 apiVersion: backstage.io/v1alpha1
