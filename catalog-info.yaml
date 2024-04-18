@@ -37,7 +37,7 @@ metadata:
     endoflife.date/products: nodejs
 spec:
   type: service
-  owner: group:snyk-cs-goof-org/cs-goof-back-end
+  owner: group:snyk-cs-goof-org/ops
   lifecycle: production
   system: sample-system
   providesApis:
@@ -72,7 +72,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: group:snyk-cs-goof/ops
+  owner: group:snyk-cs-goof-org/ops
   system: sample-system
   definition:
     $text: https://github.com/snyk-cs-goof/pygoat/blob/main/api-spec.yaml
@@ -89,7 +89,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: group:snyk-cs-goof-org/cs-goof-back-end
+  owner: group:snyk-cs-goof-org/ops
   system: sample-system
   definition:
     $text: https://petstore.swagger.io/v2/swagger.json
@@ -112,7 +112,7 @@ metadata:
   name: sample-domain
   description: Sample domain which has stuff for demoing.
 spec:
-  owner: group:snyk-cs-goof/ops
+  owner: group:snyk-cs-goof-org/ops
 
 ---
 apiVersion: backstage.io/v1alpha1
@@ -122,5 +122,5 @@ metadata:
   name: python-goof
   description: Testing tool for profiles of Python Goof
 spec:
-  owner: group:snyk-cs-goof/ops
+  owner: group:snyk-cs-goof-org/ops
   domain: sample-domain
